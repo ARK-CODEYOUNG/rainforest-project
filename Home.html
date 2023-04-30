@@ -1,0 +1,145 @@
+<html>
+    <head>
+    <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+body {
+  background-image: url('https://i.redd.it/iwlmfz42vqp51.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+li{
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+    display:inline-block;
+}
+footer {
+  color: white;
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+</style>
+
+    </head>
+    <body>
+        <header>
+          <h1 style="text-align: center;color: rgb(0, 70, 114);">Rainforests</h1>
+          </header>
+          <p style="text-align: center; color: white;font-size: 20px;">Hello my name is Ark and I have created this project about rainforests just so that your information about rainforests will increase. And I have also created this project so that you know that what people are doing to save our rainforests and stop people from cutting down our trees because where do we get our air from?  Trees is the answer! How do we get fruits? Trees is the answer! We have learn to take care of our enviroment that god has gifted us.</p>
+          <nav style="background-color: #ccccff;">
+            <ul>
+                <center>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Taking care .html">Taking care of our enviroment</a></li>
+                <li><a href="The advantage.html">The advantage</a></li>
+                <li><a href="Pro's and con's.html">Pro's and con's</a></li>
+                </center>
+             </ul>
+          </nav>
+          <div style="text-align:center">
+            <h2 style="color: white;">Tabbed Image Gallery</h2>
+            <p style="color: white;">Click on the images below:</p>
+          </div>
+          
+          <!-- The four columns -->
+          <div class="row">
+            <div class="column">
+              <img src="https://th.bing.com/th/id/OIP.G02UFUl72ug7_mhK6gL0ywHaE8?w=296&h=198&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="https://th.bing.com/th/id/OIP.iOQEUrVpRTijS3pkOG2DXgHaE7?w=286&h=191&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="https://th.bing.com/th/id/OIP.I7COarhQ1DmL71M6fC_72AHaE6?w=289&h=191&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="https://th.bing.com/th/id/R.6e08fdff4876c1b9935765861c7a35b2?rik=K4xCKwLamoI5Hw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2fa%2fb%2f100279.jpg&ehk=rWlcyGDLil3fdgYf3mknlcBn3kYbHRJv3PMSL4YInos%3d&risl=&pid=ImgRaw&r=0" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+          
+
+         
+
+
+        <footer style="text-align: center;">
+          <p>Author: Ark Barot</p>
+          <p><a href="mailto:Arkbarot_html.com">Ark@rainforests.com</a></p>
+        </footer>
+    </body>
+
+</html>
